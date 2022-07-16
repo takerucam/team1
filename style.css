@@ -5,11 +5,53 @@ header h1 {
 main {
   height: 100vh;
   background-color: gray;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 footer {
   background-color: brown;
+}
+
+.pic {
+  background-color: rgb(255, 252, 230);
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  border-radius: 20px;
+  transition-duration: 1s;
+}
+
+.pic:hover {
+  height : 400px;
+}
+.pic:hover .pic_url{
+  display: block;
+  opacity: 1;
+}
+
+.image {
+  width : 240px;
+  height : 166px;
+  padding-top: 30px;
+  object-fit: cover;
+}
+
+.pic_text {
+
+}
+
+.pic_url {
+  color: green;
+  cursor: pointer;
+  text-decoration: underline;
+  opacity: 0;
+  display: none;
+}
+
+.food {
+  background-color: rgb(230, 255, 200);
+  width: 300px;
+  height: 400px;
+  text-align: center;
+  border-radius: 20px;
+  display: none;
 }
