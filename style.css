@@ -1,14 +1,79 @@
-header h1 {
+body {
+  background-color: linen;
+}
+header > h1 {
   text-align: center;
 }
 
+header {
+  border-bottom: solid 1px black;
+}
+
 main {
-  height: 100vh;
-  background-color: gray;
+  padding: 0 100px;
 }
 
 footer {
-  background-color: brown;
+  border-top: solid 1px black;
+  text-align: center;
+}
+
+.plan-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.header-text {
+  text-align: center;
+  font-size: 24px;
+  color: rgb(69, 69, 69);
+}
+
+.shop-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+main > p {
+  font-size: 32px;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.pic {
+  background-color: rgb(255, 252, 230);
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  border-radius: 20px;
+  transition-duration: 1s;
+  margin: 10px 10px;
+}
+
+.pic:hover {
+  height: 400px;
+}
+.pic:hover .pic_url {
+  display: block;
+  opacity: 1;
+}
+
+.image {
+  width: 240px;
+  height: 166px;
+  padding-top: 30px;
+  object-fit: cover;
+}
+
+.food {
+  background-color: rgb(230, 255, 200);
+  width: 300px;
+  height: 400px;
+  text-align: center;
+  border-radius: 20px;
+  display: none;
 }
 
 .pic {
@@ -21,22 +86,17 @@ footer {
 }
 
 .pic:hover {
-  height : 400px;
-  padding-bottom: 0px;
+  height: 400px;
 }
-.pic:hover .pic_url{
+.pic:hover .pic_url {
   opacity: 1;
 }
 
 .image {
-  width : 240px;
-  height : 166px;
+  width: 240px;
+  height: 166px;
   padding-top: 30px;
   object-fit: cover;
-}
-
-.pic_text {
-
 }
 
 .pic_url {
@@ -47,8 +107,8 @@ footer {
   position: relative;
   top: 100px;
   transition-property: opacity;
-  transition-duration: 1s;
-  transition-delay: 0.2s;
+  transition-duration: 0.1s;
+  transition-delay: 0.25s;
 }
 
 .food {
